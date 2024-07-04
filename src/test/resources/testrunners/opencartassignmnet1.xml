@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" verbose="3" parallel="tests"
+	thread-count="3">
+	<test name="Open Cart Assignment1">
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/login"/>
+		<parameter name="email" value="srinvas.qa@gmail.com"/>
+		<parameter name="password" value="opencart"/>
+		<classes>
+			<class name="mytests.OpenCartAssignment1" />
+		</classes>
+	</test>
+
+
+</suite>
